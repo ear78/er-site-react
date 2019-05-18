@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import Title from './title/Title'
+
 class Header extends Component {
   state = {
     title: 'Elliot Richardson',
@@ -8,7 +10,7 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <h1>{ this.state.title }</h1>
+        <Title title={this.state.title} />
         <h4>{ this.state.subTitle }</h4>
       </div>
     )

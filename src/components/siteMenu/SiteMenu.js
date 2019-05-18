@@ -5,6 +5,7 @@ const siteMenu = (props) => {
   return (
     <div className={styles.menuItemContainer}>
       <img className={styles.menuItem} src={props.image} />
+      <h4>{ props.title }</h4>
     </div>
 
   )
