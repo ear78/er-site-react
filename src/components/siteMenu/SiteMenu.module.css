@@ -1,6 +1,11 @@
+.menuItemContainer {
+  max-width: 450px;
+  max-height: 450px;
+}
+
 .menuItem {
- height: 300px;
- width: 300px;
+ height: 100%;
+ width: 100%;
  background-size: cover;
  background-repeat: no-repeat;
 }
