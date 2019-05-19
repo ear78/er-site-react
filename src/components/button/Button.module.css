@@ -1,0 +1,20 @@
+.Button {
+  background: transparent;
+  padding: 0;
+  border: 2px solid #000;
+}
+
+.Button a {
+  padding: 14px 40px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  transition: all .14s ease-out;
+}
+
+.Button a:hover {
+  color: #fff;
+  background: #000;
+}
