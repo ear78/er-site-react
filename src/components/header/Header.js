@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 
-import Title from './title/Title'
+import styles from './Header.module.css'
+
+import Title from '../title/Title'
+import SubTitle from '../subTitle/SubTitle'
 
 class Header extends Component {
   state = {
@@ -9,9 +12,9 @@ class Header extends Component {
   }
   render() {
     return (
-      <div>
+      <div className={styles.HeaderWrap}>
         <Title title={this.state.title} />
-        <h4>{ this.state.subTitle }</h4>
+        <SubTitle subTitle={this.state.subTitle} />
       </div>
     )
   }

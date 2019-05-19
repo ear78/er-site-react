@@ -1,11 +1,21 @@
-.menuItemContainer {
-  max-width: 450px;
-  max-height: 450px;
+.MenuItemContainer {
+  margin-right: 15px;
+  max-width: 400px;
+  max-height: 400px;
 }
 
-.menuItem {
- height: 100%;
+.MenuItemContainer:last-child {
+  margin-right: 0;
+}
+
+.MenuItem {
+ height: auto;
  width: 100%;
- background-size: cover;
- background-repeat: no-repeat;
+}
+
+.MenuItemTitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Avenir', sans-serif;
+  padding-top: 10px;
 }

@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styles from './SiteMenu.module.css'
 
 const siteMenu = (props) => {
   return (
-    <div className={styles.menuItemContainer}>
-      <img className={styles.menuItem} src={props.image} />
-      <h4>{ props.title }</h4>
+    <div className={styles.MenuItemContainer}>
+      <img className={styles.MenuItem} src={props.image} alt=''/>
+      <h4 className={styles.MenuItemTitle}>{ props.title }</h4>
     </div>
 
   )
