@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 import styles from './Header.module.css'
 
@@ -8,12 +9,15 @@ import SubTitle from '../subTitle/SubTitle'
 class Header extends Component {
   state = {
     title: 'Elliot Richardson',
-    subTitle: 'Front End Developer'
+    subTitle: 'Front End Developer',
+    path: '/'
   }
   render() {
     return (
       <div className={styles.HeaderWrap}>
-        <Title title={this.state.title} />
+        <Link to={{pathname: this.state.path}}>
+          <Title title={this.state.title} />
+        </Link>
         <SubTitle subTitle={this.state.subTitle} />
       </div>
     )
