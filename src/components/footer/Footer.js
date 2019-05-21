@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import styles from './Footer.module.css'
 
 import Button from '../button/Button'
+import Copyright from '../copyright/Copyright'
+import SocialComp from '../socialComp/SocialComp'
 
 class Footer extends Component {
   state = {
@@ -13,11 +15,12 @@ class Footer extends Component {
   render() {
     return (
       <div className={styles.Footer}>
-        {/*<button>
-          <Link to="/">Kontakt</Link>
-        </button> */}
         <Button
-          path={this.state.path} label={this.state.label} />
+          path={this.state.path}
+          label={this.state.label} />
+
+        <SocialComp />
+        <Copyright />
       </div>
     )
   }

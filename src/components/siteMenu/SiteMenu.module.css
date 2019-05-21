@@ -4,6 +4,17 @@
   max-height: 400px;
 }
 
+.MenuItemContainer a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  transition: all .14s ease-out;
+}
+
+.MenuItemContainer a:hover {
+  opacity: .8;
+}
+
 .MenuItemContainer:last-child {
   margin-right: 0;
 }

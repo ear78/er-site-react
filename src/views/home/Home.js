@@ -12,16 +12,16 @@ class Home extends Component {
     title: 'Elliot Richardson',
     subTitle: 'Creative UI Developer',
     items: [
-      { id: 0, image: aboutImg, itemTitle: 'About'},
-      { id: 1, image: portfolioImg, itemTitle: 'Portfolio'},
-      { id: 2, image: resumeImg, itemTitle: 'Resume'},
+      { id: 0, image: aboutImg, itemTitle: 'About', path: '/about'},
+      { id: 1, image: portfolioImg, itemTitle: 'Portfolio', path: '/portfolio'},
+      { id: 2, image: resumeImg, itemTitle: 'Resume', path: '/resume'},
     ]
   }
 
   render() {
     const items = [aboutImg, portfolioImg, resumeImg]
     const menuItems = this.state.items.map((item, index) =>
-      <SiteMenu key={index} image={item.image} title={item.itemTitle}/>
+      <SiteMenu key={index} image={item.image} title={item.itemTitle} path={item.path}/>
     )
     return (
       <div className={styles.menuWrapper}>
