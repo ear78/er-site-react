@@ -6,7 +6,6 @@ import SocialLink from './socialLink/SocialLink'
 
 class SocialComp extends Component {
   state = {
-    isHover: false,
     socialItems: [
       { platform: 'fa-linkedin-square',  path: 'https://linkedin.com'},
       { platform: 'fa-twitter-square',  path: 'https://twitter.com'},
@@ -20,8 +19,7 @@ class SocialComp extends Component {
       return <SocialLink
                 key={index}
                 path={item.path}
-                index={index}
-                platform={item.platform} />
+                platform={item.platform}/>
     })
     return (
       <div className={styles.SocialComp}>

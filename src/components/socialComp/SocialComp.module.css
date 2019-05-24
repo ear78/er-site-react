@@ -4,6 +4,11 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  transition: all .14s ease-out;
+}
+
+.SocialComp:hover a {
+  color: grey;
 }
 
 .SocialComp i {
