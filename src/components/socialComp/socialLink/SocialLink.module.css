@@ -3,6 +3,6 @@
   transition: all .14s ease-out;
 }
 
-.Links:hover {
-  color: #616161;
+.Links:hover i {
+  color: #000;
 }
