@@ -6,7 +6,7 @@ import profileImg from '../../../assets/img/profileImg.png'
 
 const profile = () => {
   return (
-    <section>
+    <section className={styles.Profile}>
       <div className={styles.ImageContainer}>
         <img className={styles.ProfileImg} src={profileImg} alt="profile image" />
       </div>

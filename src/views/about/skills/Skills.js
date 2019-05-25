@@ -1,5 +1,6 @@
 import React from 'react'
 
+import SectionTitle from '../../../components/sectionTitle/SectionTitle'
 import Logos from './logos/Logos'
 import styles from './Skills.module.css'
 
@@ -13,7 +14,7 @@ import gulpImage from '../../../assets/img/gulp-blk.png'
 import sassImage from '../../../assets/img/sass-blu.png'
 import vueImage from '../../../assets/img/vuejs-logo.png'
 
-const skills = () => {
+const skills = (props) => {
 
   const images = [
     {logo: cssImage, altText: 'css logo'},
@@ -26,13 +27,13 @@ const skills = () => {
     {logo: sassImage, altText: 'sass logo'},
     {logo: vueImage, altText: 'vuejs logo'},
   ]
-  let logos = images.map((image) => {
-    return <Logos logoImg={image.logo} altText={image.altText}/>
+  let logos = images.map((image, index) => {
+    return <Logos key={index} logoImg={image.logo} altText={image.altText}/>
   })
 
   return (
-    <div>
-      <h4>Skills</h4>
+    <div className={styles.Skills}>
+      <SectionTitle sectionTitle="Skills" />
       <div className={styles.LogoWrapper}>
         {logos}
       </div>
