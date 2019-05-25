@@ -1,5 +1,8 @@
 .Links {
   color: #000;
+}
+
+.Links i {
   transition: all .14s ease-out;
 }
 

@@ -1,0 +1,17 @@
+.ImageContainer {
+  max-width: 160px;
+  margin: 25px auto;
+  text-align: center;
+}
+
+.ProfileImg {
+  width: 100%;
+  height: auto;
+}
+
+.Desc {
+  max-width: 850px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 27px;
+}

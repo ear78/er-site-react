@@ -1,4 +1,8 @@
 import React, { Component } from 'react'
+import styles from './About.module.css'
+
+import Profile from './profile/Profile'
+import Skills from './skills/Skills'
 
 class About extends Component {
     state = {
@@ -6,8 +10,9 @@ class About extends Component {
     }
     render() {
         return (
-            <div>
-                { this.state.message }
+            <div className={styles.About}>
+              <Profile />
+              <Skills />
             </div>
         )
     }
