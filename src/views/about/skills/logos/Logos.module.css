@@ -1,4 +1,9 @@
 .Logos {
   width: auto;
-  height: 60px;
+  height: 55px;
+  margin-right: 12px;
+}
+
+.Logos:last-child {
+  margin-right: 0;
 }

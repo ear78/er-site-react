@@ -8,6 +8,16 @@
 .LogoWrapper {
   display: flex;
   justify-content: space-between;
-  width: 850px;
-  margin: 0 auto;
+  max-width: 850px;
+  margin: 0 auto 80px;
+}
+
+.ListWrapper {
+  display: flex;
+  padding: 0 25px;
+}
+
+.ListColumn {
+  width: 25%;
+  text-align: center;
 }
