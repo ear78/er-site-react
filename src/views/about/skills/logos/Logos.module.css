@@ -1,4 +1,10 @@
 .Logos {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 55px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+}
+
+.Logos:last-child {
+  margin-right: 0;
 }

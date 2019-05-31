@@ -1,5 +1,7 @@
 import React from 'react'
 
+import SkillList from './skillList/SkillList'
+import SectionTitle from '../../../components/sectionTitle/SectionTitle'
 import Logos from './logos/Logos'
 import styles from './Skills.module.css'
 
@@ -13,7 +15,7 @@ import gulpImage from '../../../assets/img/gulp-blk.png'
 import sassImage from '../../../assets/img/sass-blu.png'
 import vueImage from '../../../assets/img/vuejs-logo.png'
 
-const skills = () => {
+const skills = (props) => {
 
   const images = [
     {logo: cssImage, altText: 'css logo'},
@@ -26,17 +28,50 @@ const skills = () => {
     {logo: sassImage, altText: 'sass logo'},
     {logo: vueImage, altText: 'vuejs logo'},
   ]
-  let logos = images.map((image) => {
-    return <Logos logoImg={image.logo} altText={image.altText}/>
+
+  let logos = images.map((image, index) => {
+    return <Logos key={index} logoImg={image.logo} altText={image.altText}/>
+  })
+
+  const col1 = ['HTML5', 'CSS', 'React', 'Javascript']
+  const col2 = ['Node', 'Angular', 'Gulp', 'Wordpress']
+  const col3 = ['Sass','Vue JS', 'SQL', 'Affinity Suite']
+  const col4 = ['Bootstrap', 'Git']
+
+  let list1 = col1.map((skill, index) => {
+    return <SkillList key={index} item={skill} />
+  })
+  let list2 = col2.map((skill, index) => {
+    return <SkillList key={index} item={skill} />
+  })
+  let list3 = col3.map((skill, index) => {
+    return <SkillList key={index} item={skill} />
+  })
+  let list4 = col4.map((skill, index) => {
+    return <SkillList key={index} item={skill} />
   })
 
   return (
-    <div>
-      <h4>Skills</h4>
+    <div className={styles.Skills}>
+      <SectionTitle sectionTitle="Skills" />
       <div className={styles.LogoWrapper}>
         {logos}
       </div>
 
+      <div className={styles.ListWrapper}>
+        <div className={styles.ListColumn}>
+          {list1}
+        </div>
+        <div className={styles.ListColumn}>
+          {list2}
+        </div>
+        <div className={styles.ListColumn}>
+          {list3}
+        </div>
+        <div className={styles.ListColumn}>
+          {list4}
+        </div>
+      </div>
     </div>
   )
 }

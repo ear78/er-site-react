@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import styles from './App.module.css'
+
 import './App.css'
 import './assets/css/reset.css'
 
@@ -15,10 +17,10 @@ function App() {
       <Router>
       <Header />
 
-        <Route exact path='/' component={Home} />
-        <Route path='/about' component={About} />
-        <Route path='/portfolio' component={Portfolio} />
-
+          <Route exact path='/' component={Home} />
+          <Route path='/about' component={About} />
+          <Route path='/portfolio' component={Portfolio} />
+          
       <Footer />
       </Router>
     </div>
