@@ -33,25 +33,23 @@ const skills = (props) => {
     return <Logos key={index} logoImg={image.logo} altText={image.altText}/>
   })
 
-  // const col1 = ['HTML5', 'CSS', 'Angular', 'Javascript']
-  // const col2 = ['Node', 'React', 'Gulp', 'Sass']
-  // const col3 = ['Vue JS', 'Wordpress', 'SQL', 'Affinity Suite']
-  // const col4 = ['Bootstrap', 'Git']
+  const col1 = ['HTML5', 'CSS', 'React', 'Javascript']
+  const col2 = ['Node', 'Angular', 'Gulp', 'Wordpress']
+  const col3 = ['Sass','Vue JS', 'SQL', 'Affinity Suite']
+  const col4 = ['Bootstrap', 'Git']
 
-  const details = ['HTML5', 'CSS', 'Angular', 'Javascript','Node', 'React', 'Gulp', 'Sass','Vue JS', 'Wordpress', 'SQL', 'Affinity Suite', 'Bootstrap', 'Git']
-
-  // let list1 = col1.map((skill, index) => {
-  //   return <SkillList key={index} item={skill} />
-  // })
-  // let list2 = col2.map((skill, index) => {
-  //   return <SkillList key={index} item={skill} />
-  // })
-  // let list3 = col3.map((skill, index) => {
-  //   return <SkillList key={index} item={skill} />
-  // })
-  // let list4 = col4.map((skill, index) => {
-  //   return <SkillList key={index} item={skill} />
-  // })
+  let list1 = col1.map((skill, index) => {
+    return <SkillList key={index} item={skill} />
+  })
+  let list2 = col2.map((skill, index) => {
+    return <SkillList key={index} item={skill} />
+  })
+  let list3 = col3.map((skill, index) => {
+    return <SkillList key={index} item={skill} />
+  })
+  let list4 = col4.map((skill, index) => {
+    return <SkillList key={index} item={skill} />
+  })
 
   return (
     <div className={styles.Skills}>
@@ -61,23 +59,18 @@ const skills = (props) => {
       </div>
 
       <div className={styles.ListWrapper}>
-        {details.map((detail, index) => {
-          return <div key={index} className={styles.ListColumn}>
-                    <SkillList item={detail} />
-                  </div>
-        })}
-        {/*// <div className={styles.ListColumn}>
-        //   {list1}
-        // </div>
-        // <div className={styles.ListColumn}>
-        //   {list2}
-        // </div>
-        // <div className={styles.ListColumn}>
-        //   {list3}
-        // </div>
-        // <div className={styles.ListColumn}>
-        //   {list4}
-        // </div>*/}
+        <div className={styles.ListColumn}>
+          {list1}
+        </div>
+        <div className={styles.ListColumn}>
+          {list2}
+        </div>
+        <div className={styles.ListColumn}>
+          {list3}
+        </div>
+        <div className={styles.ListColumn}>
+          {list4}
+        </div>
       </div>
     </div>
   )

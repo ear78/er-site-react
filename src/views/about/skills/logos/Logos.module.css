@@ -1,7 +1,8 @@
 .Logos {
   width: auto;
   height: 55px;
-  margin-right: 12px;
+  margin-right: 25px;
+  margin-bottom: 15px;
 }
 
 .Logos:last-child {
