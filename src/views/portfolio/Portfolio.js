@@ -6,9 +6,6 @@ import H4Component from '../../components/h4component/H4Component'
 import ClientList from './clientList/ClientList'
 
 class Portfolio extends Component {
-  // constructor(props) {
-  //   super(props)
-  // }
   state = {
       message: 'This is Portfolio',
       clients: [
