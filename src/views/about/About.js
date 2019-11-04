@@ -3,6 +3,7 @@ import styles from './About.module.css'
 
 import Profile from './profile/Profile'
 import Skills from './skills/Skills'
+import WorkHistory from './WorkHistory/WorkHistory'
 
 class About extends Component {
     state = {
@@ -13,6 +14,7 @@ class About extends Component {
             <div className={styles.About}>
               <Profile />
               <Skills />
+              <WorkHistory />
             </div>
         )
     }
