@@ -1,0 +1,18 @@
+.ClientList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Client {
+  font-weight: bold;
+  color: #575757;
+  font-style: italic;
+  width: 48%;
+  padding: 12px 0;
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+.Client span {
+  font-weight: 100;
+}

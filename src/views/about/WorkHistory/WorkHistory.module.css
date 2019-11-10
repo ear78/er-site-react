@@ -1,0 +1,36 @@
+.WorkHistory {
+  margin-bottom: 50px;
+  max-width: 1000px;
+}
+
+.History {
+  margin-bottom: 50px;
+}
+
+.WorkHistory h3 {
+  font-size: 1.5em;
+  font-family: avenir;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.WorkHistory h3 span {
+  font-size: 14px;
+}
+
+.WorkHistory .Details {
+  font-weight: 900;
+  line-height: 22px;
+  margin-bottom: 0px;
+  color: #505050;
+}
+
+.WorkHistory ul {
+  margin: 15px 0 15px 40px;
+}
+
+.WorkHistory li {
+  margin-bottom: 8px;
+  list-style-type: disc;
+  line-height: 1.4;
+}
