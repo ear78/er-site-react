@@ -43,5 +43,21 @@ export const jobs = [
       'Implemented Sass into our workflow and created a system of standards for our CSS development environment',
 
     ]
+  },
+  {
+    company: 'Apple Inc.',
+    position: 'Tech Support/Genius Bar',
+    datesWorked: 'Jul 2015 – Jul 2017 / 2 years 1 month',
+    location: 'Franklin, TN',
+    description: [
+      'Troubleshot iOS and Mac OS devices',
+      'iOS and Mac OS software support',
+      'Repaired relationships with Apple world wide customers, and realigned customer confidence in the Apple product',
+      'Consistently rated in the top 3 for customer service ratings within my peers',
+      'Mobile and Mac technician able to help out within both areas for Genius Bar Support',
+      'Able to work as a team member and able to give feedback in a professional manner keeping up the standards of the Apple culture',
+      'Ability to handle pressure in a fast paced environment and multitask',
+      'Time management was a high priority requiring 10 minute appointments for mobile devices, and Mac appointments at 15 minutes'
+    ]
   }
 ]

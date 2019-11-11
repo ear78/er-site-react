@@ -3,6 +3,8 @@ import styles from './WorkHistory.module.css'
 
 import { jobs } from './../../../assets/data/workHistoryData.js'
 import SectionTitle from './../../../components/SectionTitle/SectionTitle'
+import SiteLink from './../../../components/SiteLink/SiteLink'
+import SectionWrapper from '../../../components/SectionWrapper/SectionWrapper'
 
 function workHistory(props) {
 
@@ -24,11 +26,17 @@ function workHistory(props) {
   })
 
   return (
-    <div className={styles.WorkHistory}>
-      <SectionTitle>Work History</SectionTitle>
-      {something}
-    </div>
-
+    <SectionWrapper>
+      <div className={styles.WorkHistory}>
+        <SectionTitle>Work History</SectionTitle>
+        {something}
+        <p>For full work history, please refer to my <SiteLink
+          to={`https://linkedin.com/in/elliot-richardson`}
+          bold="true"
+          target="true">LinkedIn Profile</SiteLink>
+        </p>
+      </div>
+    </SectionWrapper>
   )
 }
 
