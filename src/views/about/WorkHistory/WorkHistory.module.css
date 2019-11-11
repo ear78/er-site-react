@@ -7,14 +7,14 @@
   margin-bottom: 50px;
 }
 
-.WorkHistory h3 {
+.WorkHistory .Company {
   font-size: 1.5em;
   font-family: avenir;
   text-transform: uppercase;
   margin-bottom: 12px;
 }
 
-.WorkHistory h3 span {
+.WorkHistory .Company span {
   font-size: 14px;
 }
 
@@ -25,7 +25,7 @@
   color: #505050;
 }
 
-.WorkHistory ul {
+.WorkHistory .List {
   margin: 15px 0 15px 40px;
 }
 

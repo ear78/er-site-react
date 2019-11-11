@@ -1,7 +1,7 @@
 import React from 'react'
 
 import SkillList from './skillList/SkillList'
-import SectionTitle from '../../../components/sectionTitle/SectionTitle'
+import SectionTitle from '../../../components/SectionTitle/SectionTitle'
 import Logos from './logos/Logos'
 import styles from './Skills.module.css'
 
@@ -53,7 +53,7 @@ const skills = (props) => {
 
   return (
     <div className={styles.Skills}>
-      <SectionTitle sectionTitle="Skills" />
+      <SectionTitle>Skills</SectionTitle>
       <div className={styles.LogoWrapper}>
         {logos}
       </div>
