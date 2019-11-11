@@ -1,0 +1,12 @@
+.Title {
+  margin-bottom: 12px;
+  font-size: 3em;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .Title {
+    font-size: 3.5em;
+  }
+}

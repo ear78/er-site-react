@@ -1,7 +1,9 @@
 .ParaText {
+  max-width: 850px;
   line-height: 28px;
   box-sizing: border-box;
   text-align: left;
+  margin: 0 auto;
 }
 
 .Center {

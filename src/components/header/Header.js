@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 import styles from './Header.module.css'
 
-import Title from '../title/Title'
-import SubTitle from '../subTitle/SubTitle'
+import PageTitle from '../PageTitle/PageTitle'
+import SubTitle from '../SubTitle/SubTitle'
 
 class Header extends Component {
   state = {
@@ -16,9 +16,9 @@ class Header extends Component {
     return (
       <div className={styles.HeaderWrap}>
         <Link to={{pathname: this.state.path}}>
-          <Title title={this.state.title} />
+          <PageTitle>{this.state.title}</PageTitle>
         </Link>
-        <SubTitle subTitle={this.state.subTitle} />
+        <SubTitle>{this.state.subTitle}</SubTitle>
       </div>
     )
   }

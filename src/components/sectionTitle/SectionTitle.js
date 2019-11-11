@@ -10,7 +10,7 @@ const sectionTitle = (props) => {
     marginBottom: props.marginBottom
   }
   return (
-    <h3 style={styleOptions} className={styles.SectionTitle}>{props.sectionTitle}</h3>
+    <h3 style={styleOptions} className={styles.SectionTitle}>{props.children}</h3>
   )
 }
 
