@@ -2,6 +2,7 @@ import React from 'react'
 
 import SkillList from './skillList/SkillList'
 import SectionTitle from '../../../components/SectionTitle/SectionTitle'
+import SectionWrapper from '../../../components/SectionWrapper/SectionWrapper'
 import Logos from './logos/Logos'
 import styles from './Skills.module.css'
 
@@ -52,27 +53,30 @@ const skills = (props) => {
   })
 
   return (
-    <div className={styles.Skills}>
-      <SectionTitle>Skills</SectionTitle>
-      <div className={styles.LogoWrapper}>
-        {logos}
-      </div>
+    <SectionWrapper>
+      <div className={styles.Skills}>
+        <SectionTitle>Skills</SectionTitle>
+        <div className={styles.LogoWrapper}>
+          {logos}
+        </div>
 
-      <div className={styles.ListWrapper}>
-        <div className={styles.ListColumn}>
-          {list1}
-        </div>
-        <div className={styles.ListColumn}>
-          {list2}
-        </div>
-        <div className={styles.ListColumn}>
-          {list3}
-        </div>
-        <div className={styles.ListColumn}>
-          {list4}
+        <div className={styles.ListWrapper}>
+          <div className={styles.ListColumn}>
+            {list1}
+          </div>
+          <div className={styles.ListColumn}>
+            {list2}
+          </div>
+          <div className={styles.ListColumn}>
+            {list3}
+          </div>
+          <div className={styles.ListColumn}>
+            {list4}
+          </div>
         </div>
       </div>
-    </div>
+    </SectionWrapper>
+
   )
 }
 

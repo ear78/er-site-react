@@ -9,7 +9,7 @@ import Home from './views/home/Home'
 import About from './views/about/About'
 import Portfolio from './views/portfolio/Portfolio'
 import Header from './components/header/Header'
-import Footer from './components/footer/Footer'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
           <Route path='/portfolio' component={Portfolio} />
-          
+
       <Footer />
       </Router>
     </div>
