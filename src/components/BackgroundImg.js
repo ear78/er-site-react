@@ -2,7 +2,7 @@ import React from 'react'
 
 const backgroundImg = (props) => {
     let backgroundStyle = {
-        backgroundImage: 'url(' + props.image + ')',
+        backgroundImage: `url(${props.image})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         height: 400

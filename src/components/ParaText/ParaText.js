@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import styles from './ParaText.module.css'
 
 function paraText(props) {
-  let align = props.align.toLowerCase() // handle upper or lower case 
+  let marginTop = props.marginTop ? styles.MarginTop : ''
+  let align = props.align ? props.align.toLowerCase() : ''
+
   if(align === 'center') {
     align = styles.Center
   }
@@ -12,7 +14,7 @@ function paraText(props) {
   }
 
   return (
-    <p className={`${styles.ParaText} ${align}`}>{props.children}</p>
+    <p className={`${styles.ParaText} ${align} ${marginTop}`}>{props.children}</p>
   )
 }
 

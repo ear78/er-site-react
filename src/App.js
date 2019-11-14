@@ -8,6 +8,7 @@ import './assets/css/reset.css'
 import Home from './views/home/Home'
 import About from './views/about/About'
 import Portfolio from './views/portfolio/Portfolio'
+import Resume from './views/Resume/Resume'
 import Header from './components/header/Header'
 import Footer from './components/Footer/Footer'
 
@@ -20,6 +21,7 @@ function App() {
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
           <Route path='/portfolio' component={Portfolio} />
+          <Route path='/resume' component={Resume} />
 
       <Footer />
       </Router>
