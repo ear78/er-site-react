@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import styles from './Portfolio.module.css'
-import SectionTitle from '../../components/sectionTitle/SectionTitle'
+import SectionTitle from '../../components/SectionTitle/SectionTitle'
 import H4Component from '../../components/h4component/H4Component'
 import ClientList from './clientList/ClientList'
 
