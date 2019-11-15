@@ -21,7 +21,7 @@
 }
 
 .BtnLrg a {
-  padding: 18px 40px;
+  padding: 24px 50px;
 }
 
 .BlackBtn {
@@ -31,4 +31,9 @@
 
 .BlackBtn a {
   color: #fff;
+  transition: all .14s ease-out;
+}
+
+.BlackBtn a:hover {
+  background: #212121;
 }
