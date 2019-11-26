@@ -17,3 +17,7 @@
 .MarginTop {
   margin-top: 20px;
 }
+
+.FullWidth {
+  max-width: none;
+}
