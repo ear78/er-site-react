@@ -5,6 +5,7 @@ import styles from './ParaText.module.css'
 function paraText(props) {
   let marginTop = props.marginTop ? styles.MarginTop : ''
   let align = props.align ? props.align.toLowerCase() : ''
+  let fullWidth = props.fullWidth ? styles.FullWidth : ''
 
   if(align === 'center') {
     align = styles.Center
@@ -14,12 +15,15 @@ function paraText(props) {
   }
 
   return (
-    <p className={`${styles.ParaText} ${align} ${marginTop}`}>{props.children}</p>
+    <p className={`${styles.ParaText} ${align} ${marginTop} ${fullWidth}`}>{props.children}</p>
   )
 }
 
 paraText.propTypes = {
-  children: PropTypes.string.isRequired
+  children: PropTypes.string.isRequired,
+  marginTop: PropTypes.bool,
+  align: PropTypes.bool,
+  fullWidth: PropTypes.bool
 }
 
 export default paraText

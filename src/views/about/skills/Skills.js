@@ -19,7 +19,7 @@ const skills = (props) => {
   const col1 = ['HTML5', 'CSS', 'React', 'Javascript']
   const col2 = ['Node', 'Angular', 'Gulp', 'Wordpress']
   const col3 = ['Sass','Vue JS', 'SQL', 'Affinity Suite']
-  const col4 = ['Bootstrap', 'Git']
+  const col4 = ['Bootstrap', 'MongoDB', 'Git', 'Adobe Suite']
 
   let list1 = col1.map((skill, index) => {
     return <SkillList key={index} item={skill} />
