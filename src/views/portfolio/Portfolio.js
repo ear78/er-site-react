@@ -4,10 +4,15 @@ import styles from './Portfolio.module.css'
 import SectionTitle from '../../components/SectionTitle/SectionTitle'
 import H4Component from '../../components/h4component/H4Component'
 import ParaText from '../../components/ParaText/ParaText'
-import PortfolioImage from '../../components/PortfolioImage/PortfolioImage'
+import PortfolioImage from './PortfolioImage/PortfolioImage'
 import ClientList from './clientList/ClientList'
+import PortfolioDesc from './PortfolioDesc/PortfolioDesc'
+import SectionWrapper from '../../components/SectionWrapper/SectionWrapper'
 
-import beoplay from '../../assets/img/beoplay1.png'
+import beoplay1 from '../../assets/img/beoplay1.png'
+import beoplay2 from '../../assets/img/beoplay2.png'
+import beoplay3 from '../../assets/img/beoplay3.png'
+import beoplay4 from '../../assets/img/beoplay4.jpg'
 
 class Portfolio extends Component {
   state = {
@@ -22,7 +27,7 @@ class Portfolio extends Component {
         {client: 'Kochava', position: 'Front End UI Developer'},
         {client: 'We Yoga', position: 'Freelance'},
       ],
-      portfolios: [beoplay, beoplay, beoplay, beoplay]
+      portfolios: [beoplay1, beoplay2, beoplay3, beoplay4]
   }
 
   render() {
@@ -36,11 +41,17 @@ class Portfolio extends Component {
                 Some of the tools I use to build pages and sites are: HTML, CSS, Javascript, Jquery, Angular, React, Vue JS, Node.js, SQL, Bootstrap, Wordpress/Squarespace CMS systems, and photo/design apps for aesthetics.  Below is my portfolio which contains sites that I've built from the ground up and also some sites that I've designed ui/ux for.  If you would like to get in contact with me about working on a project, please click the link provided or click the Kontakt button below. Thanks so much for checking out what I do. Please enjoy!
               </ParaText>
 
-              <SectionTitle textAlign={'left'}>Clients</SectionTitle>
-              <ClientList clients={this.state.clients} />
+              <SectionWrapper>
+                <SectionTitle textAlign={'left'}>Clients</SectionTitle>
+                <ClientList clients={this.state.clients} />
+              </SectionWrapper>
+
 
               <section>
-                <SectionTitle>Projects</SectionTitle>
+                <SectionTitle marginBottom={10}>Beoplay Website Clone</SectionTitle>
+                <PortfolioDesc>
+                  HTML, CSS, Javascript, Jquery, Angular, Gulp, Sass, Node.js, SQL
+                </PortfolioDesc>
                 <div className={styles.PortfolioImagesRow}>
                   {portImage}
                 </div>
