@@ -21,8 +21,8 @@ function paraText(props) {
 
 paraText.propTypes = {
   children: PropTypes.string.isRequired,
-  marginTop: PropTypes.bool,
-  align: PropTypes.bool,
+  marginTop: PropTypes.string,
+  align: PropTypes.string,
   fullWidth: PropTypes.bool
 }
 
