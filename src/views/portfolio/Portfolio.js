@@ -1,18 +1,12 @@
 import React, { Component } from 'react'
 
 import styles from './Portfolio.module.css'
-import SectionTitle from '../../components/SectionTitle/SectionTitle'
 import H4Component from '../../components/h4component/H4Component'
 import ParaText from '../../components/ParaText/ParaText'
-import PortfolioImage from './PortfolioImage/PortfolioImage'
 import ClientList from './clientList/ClientList'
-import PortfolioDesc from './PortfolioDesc/PortfolioDesc'
 import SectionWrapper from '../../components/SectionWrapper/SectionWrapper'
-
-import beoplay1 from '../../assets/img/beoplay1.png'
-import beoplay2 from '../../assets/img/beoplay2.png'
-import beoplay3 from '../../assets/img/beoplay3.png'
-import beoplay4 from '../../assets/img/beoplay4.jpg'
+import SectionTitle from '../../components/SectionTitle/SectionTitle'
+import PortfolioSection from './PortfolioSection/PortfolioSection'
 
 class Portfolio extends Component {
   state = {
@@ -26,18 +20,14 @@ class Portfolio extends Component {
         {client: 'International Tower Lighting', position: 'Front End Developer/ Designer'},
         {client: 'Kochava', position: 'Front End UI Developer'},
         {client: 'We Yoga', position: 'Freelance'},
-      ],
-      portfolios: [beoplay1, beoplay2, beoplay3, beoplay4]
+      ]
   }
 
   render() {
-    let portImage = this.state.portfolios.map(portfolio => {
-      return <PortfolioImage bgImage={portfolio}/>
-    })
       return (
           <div className={styles.Portfolio}>
               <SectionTitle marginBottom={20} textAlign="left" textTransform="uppercase" sectionTitle="Web Development Portfolio"/>
-              <ParaText fullWidth={true}>
+              <ParaText marginBottom={40} fullWidth={true}>
                 Some of the tools I use to build pages and sites are: HTML, CSS, Javascript, Jquery, Angular, React, Vue JS, Node.js, SQL, Bootstrap, Wordpress/Squarespace CMS systems, and photo/design apps for aesthetics.  Below is my portfolio which contains sites that I've built from the ground up and also some sites that I've designed ui/ux for.  If you would like to get in contact with me about working on a project, please click the link provided or click the Kontakt button below. Thanks so much for checking out what I do. Please enjoy!
               </ParaText>
 
@@ -46,16 +36,8 @@ class Portfolio extends Component {
                 <ClientList clients={this.state.clients} />
               </SectionWrapper>
 
+              <PortfolioSection data={this.state.portfolios}/>
 
-              <section>
-                <SectionTitle marginBottom={10}>Beoplay Website Clone</SectionTitle>
-                <PortfolioDesc>
-                  HTML, CSS, Javascript, Jquery, Angular, Gulp, Sass, Node.js, SQL
-                </PortfolioDesc>
-                <div className={styles.PortfolioImagesRow}>
-                  {portImage}
-                </div>
-              </section>
           </div>
       )
   }

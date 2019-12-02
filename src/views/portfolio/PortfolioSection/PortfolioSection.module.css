@@ -1,0 +1,10 @@
+.ProjectWrapper {
+  margin-bottom: 100px;
+}
+
+.PortfolioImagesRow {
+  display: flex;
+  margin-right: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

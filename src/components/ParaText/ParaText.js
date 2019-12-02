@@ -4,6 +4,7 @@ import styles from './ParaText.module.css'
 
 function paraText(props) {
   let marginTop = props.marginTop ? styles.MarginTop : ''
+  let marginBottom = props.marginBottom ? props.marginBottom : ''
   let align = props.align ? props.align.toLowerCase() : ''
   let fullWidth = props.fullWidth ? styles.FullWidth : ''
 
@@ -15,7 +16,7 @@ function paraText(props) {
   }
 
   return (
-    <p className={`${styles.ParaText} ${align} ${marginTop} ${fullWidth}`}>{props.children}</p>
+    <p style={{ marginBottom: `${marginBottom}px`}} className={`${styles.ParaText} ${align} ${marginTop} ${fullWidth}`}>{props.children}</p>
   )
 }
 
