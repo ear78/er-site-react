@@ -36,7 +36,7 @@ class Portfolio extends Component {
                 <ClientList clients={this.state.clients} />
               </SectionWrapper>
 
-              <PortfolioSection data={this.state.portfolios}/>
+              <PortfolioSection/>
 
           </div>
       )
