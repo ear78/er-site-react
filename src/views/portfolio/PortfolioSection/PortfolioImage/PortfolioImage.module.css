@@ -1,8 +1,21 @@
 .PortfolioImageContainer {
   overflow: hidden;
+  width: 23%;
+  margin: 0 1%;
+  transition: all .2s ease;
 }
 
-.PortfolioImage {
+.PortfolioImageContainer:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  opacity: .7;
+}
+
+.PortfolioImageContainer img {
+  width: 100%
+}
+
+/* .PortfolioImage {
   background-size: cover;
   background-position: center;
   height: 275px;
@@ -13,4 +26,5 @@
 .PortfolioImage:hover {
   cursor: pointer;
   transform: scale(1.05);
-}
+  opacity: .7;
+} */
