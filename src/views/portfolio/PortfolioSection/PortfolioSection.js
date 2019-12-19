@@ -13,12 +13,10 @@ function portfolioSection(props) {
             <PortfolioDesc>{ d.description }</PortfolioDesc>
             <div className={styles.PortfolioImagesRow}>
               { d.images.map(image => {
-                return <PortfolioImage bgImage={image}/>
+                return <PortfolioImage click={props.click} bgImage={image}/>
               })}
             </div>
            </section>
-
-
   })
 
   return (

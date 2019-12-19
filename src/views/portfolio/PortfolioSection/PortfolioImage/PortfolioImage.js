@@ -3,10 +3,11 @@ import styles from './PortfolioImage.module.css'
 
 function portfolioImage(props) {
   return (
-    <div className={styles.PortfolioImageContainer}>
-      <div
+    <div onClick={props.click} className={styles.PortfolioImageContainer}>
+      {/*<div
         style={{backgroundImage:`url(${props.bgImage})`}}
-        className={styles.PortfolioImage}></div>
+        className={styles.PortfolioImage}></div>*/}
+        <img src={props.bgImage} />
     </div>
 
   )
